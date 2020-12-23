@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chujun Xiong">
+    <meta name="description" content="a dog website">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- link the css file -->
+    <link rel="stylesheet" type="text/css" href="../css/myStyle.css">
+</head>
+
+<body>
+    <div class="contact-container contact">
+        <!-- <header> is the semantic tag that holds introductory contents -->
+        <header class="grid-header">
+            <!-- <nav> is the tag to display the navigation links-->
+            <nav class="topnav">
+
+                <a class="home" href="../index.html">Home</a>
+                <a class="gallery" href="gallery.html">Gallery</a>
+                <a class="contact" href="contact.html">Contact Us</a>
+                <!-- create a drowndown button -->
+                <div class="dropdown">
+                    <button class="dropbtn">About Dogs</button>
+                    <div class="dropdown-content">
+                        <a href="../index.html#labs">Labrador</a>
+                        <a href="../index.html#border-collies">Border Collie</a>
+                        <a href="../index.html#pugs">Pug Dog</a>
+                        <a href="../index.html#Shiba">Shiba Inu</a>
+                    </div>
+                </div>
+            </nav>
+            <h1 id="contactheaderword">Let's Get In Touch</h1>
+        </header>
+     
+        <div class="contactForm">
+            <div class="flexform">
+                <label>First Name </label><input type="text" id="fname" name="firstname"
+                    placeholder="Fisrt name goes here">
+            </div>
+
+            <div class="flexform">
+                <label >Last Name </label>
+                <input type="text" id="lname" name="lastname" placeholder="Last name goes here">
+            </div>
+
+            <div class="flexform">
+                <label>City Name </label>
+                <input type="text" id="emailadd" name="mail" placeholder="City name goes here">
+            </div>
+
+            <div class="flexform">
+                <label>Email Address</label>
+                <input type="email" id="emailadd" name="mail" placeholder="Email goes here">
+            </div>
+            <div class="flexform">
+                <label>Phone Number</label>
+                <input type="text" placeholder="Phone number goes here">
+            </div>
+
+            <div class="flexform">
+                <label >Dog Breed</label>
+                <input type="text" id="emailadd" name="mail" placeholder="Your dog's breed goes here">
+            </div>
+            <div class="flexform">
+                <label>Tell Us What You Think</label>
+                <textarea name="message" id="message" cols="50" rows="10" placeholder="Your thoughts goes here"></textarea>
+
+            </div>
+            <div class="flexform">
+                <input class="submitbutton" type="Submit"></input>
+            </div>
+
+        </div>
+
+        <footer id="footer" class="grid-footer">
+            <h3>Contact Us If You Have Any Quesiton</h3>
+            <div class = "icon">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p><a href="mailto:author@example.com">Contact the Author</a> By Email</p>
+            <p><span>Business Number:</span> 1(800)123-4332</p>
+            <p><span>Company Address:</span><Address>111 Hollywood Blvd, L.A., CA, United States</Address></p>
+            
+            <p>Posted by: <cite>Addie Xiong</cite>
+                 | copyright &copy; 2020</p>
+        </footer>
+
+</body>
+
+</html>

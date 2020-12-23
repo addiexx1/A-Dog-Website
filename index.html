@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chujun Xiong">
+    <meta name="description" content="a dog website">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>A responsive website about dogs</title>
+    <!-- link the css file -->
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css">
+</head>
+
+<body>
+    <div class="grid-container mainpage">
+        <!-- <header> is the semantic tag that holds introductory contents -->
+        <header class="grid-header">
+            <!-- <nav> is the tag to display the navigation links-->
+            <nav class="topnav">
+
+                <a class="home" href="index.html">Home</a>
+                <a class="gallery" href="pages/gallery.html">Gallery</a>
+                <a class="contact" href="pages/contact.html">Contact Us</a>
+                <!-- create a drowndown button -->
+                <div class="dropdown">
+                    <button class="dropbtn">About Dogs</button>
+                    <div class="dropdown-content">
+                        <a href="#labs">Labrador</a>
+                        <a href="#border-collies">Border Collie</a>
+                        <a href="#pugs">Pug Dog</a>
+                        <a href="#Shiba">Shiba Inu</a>
+                    </div>
+                </div>
+            </nav>
+            <h1 id="headerword">They Are Human's Best Friend.</h1>
+        </header>
+
+        <!-- <div> defines a division or a section in an HTML document 
+		two seperate divisions for introduction about dogs and info on signing up the newsletter -->
+        <div class="grid-intro">
+            <h1>Dogs are the Best</h1>
+            <h2>Why dogs make the best companions</h2>
+            <ul>
+                <li><span>They’re incredibly loyal.</span> It’s no wonder a 40% of dog owners recently admitted they tell their dogs everything – we know we can trust them to be there for us!</li>
+                <li><span>Their positive attitude is infectious.</span> Dogs get so excited over the simplest things – sticks, discarded food wrappers, a trip to the corner shop – that they make you appreciate the little things in life</li>
+                <li><span>They make you active</span> – even when you really, really can’t be bothered to go for a stroll, the necessity of ‘walkies’ means you've just got to get out there. </li>
+                <li><span>They make sure no food ever goes to waste.</span> If you're full up from dinner but can’t stand the thought of tipping any leftovers into the rubbish, your furry little dustbin is always on hand to help.</li>
+            </ul>
+            <video autoplay loop>
+                <source src="video/dog-4740.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="newsletter" class="grid-form">
+            <h2>Sign up for our newsletter</h2>
+            <form>
+                <p><label for="fname">First Name </label><input type="text" id="fname" name="firstname"
+                        placeholder="Your name.."></p>
+                <p><label for="lname">Last Name </label><input type="text" id="lname" name="lastname"
+                        placeholder="Your last name.."></p>
+                <p><label for="emailadd">Email Address </label><input type="email" id="emailadd" name="mail"
+                        placeholder="Email address" required></p>
+                <p><label><input type="checkbox" name="lab"> Labrador Newsletter</label><br />
+                    <label><input type="checkbox" name="border"> Border Collie Newsletter</label><br />
+                    <label><input type="checkbox" name="pug"> Pug Newsletter</label><br>
+                    <label><input type="checkbox" name="pug"> Shiba Inu Newsletter</label>
+                </p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="grid-table">
+            <!-- price table for the magazine -->
+            <table>
+                <tr>
+                    <th>Paper Magazine</th>
+                    <th>Subscription Cost</th>
+                </tr>
+                <tr>
+                    <td>Labrador Retriever</td>
+                    <td>$109.99/year</td>
+                </tr>
+                <tr>
+                    <td>border Collie</td>
+                    <td>$119.99/year</td>
+                </tr>
+                <tr>
+                    <td>Pug Dog</td>
+                    <td>$129.99/year</td>
+                </tr>
+                <tr>
+                    <td>Shiba Inu</td>
+                    <td>$139.99/year</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <section class="grid-article">
+            <h2>Our Articles</h2>
+            <div class="flex_article">
+                <!--<article> element specifies independent, self-contained contents-->
+                <article id="labs" class="flex_item">
+                    <figure>
+                        <!-- <figure> can group image and caption/figcaption together -->
+                        <img src="img/dogs-65867_small.jpg" alt="Labs">
+                        <figcaption>Labrador</figcaption>
+                    </figure>
+                    <h3>Labrador Retriever</h3>
+                    <p>The warm and intelligent Labrador Retriever is <span>America's number one breed</span> registered with the American Kennel Club. 
+                        Artists and photographers have captured their image countless times--usually as 
+                        the loyal companion, waiting patiently by their owner's side.</p>
+                        <p><span>Built for sport,</span> the Lab is muscular and athletic. They have a short, easy-care coat, friendly demeanor, keen intelligence, 
+                            and plenty of energy. Devotion to this breed runs deep; Labs are loving, people-oriented dogs who live to serve their families, 
+                            and owners.</p>
+                            <p>The breed originated on the <span>island of Newfoundland,</span> off the northeastern Atlantic coast of Canada. Originally called the St. John's dog, 
+                                after the capital city of Newfoundland, they were bred to help the local fishermen--hauling nets, fetching ropes, 
+                                and retrieving fish that had escaped the nets--as well as to be a family dog.</p>
+                </article>
+
+                <!-- Article section on Border Collies -->
+                <article id="border-collies" class="flex_item">
+                    <figure>
+                        <img src="img/dogs-1694838_small.jpg" alt="border-collies">
+                        <figcaption>Border Collie</figcaption>
+                    </figure>
+                    <h3>Border Collie</h3>
+                    <p>The Border Collie, a medium-sized dog, possesses a seemingly <span>supernatural amount of energy and stamina</span> — a hardiness that 
+                        was developed when he was required to work all day in the hills and valleys of the rugged Scottish border country. When it comes to the ideal working dog, it doesn't get much better than the Border Collie.</p>
+                        <p>If there is a dark side to the Border Collie's energy and workaholic attitude. He is <span>not a cuddly, couch-potato dog.</span>. He wants and needs a job. Keeping up with the Border Collie's intense mental and physical stamina is exhausting to an owner who wants a laid-back family pet.</p>
+                        <p><span>The highly trainable and intelligent,</span> Border Collies also excel in various canine sports, including obedience, flyball, agility, tracking, and flying disc competitions. </p>
+                </article>
+
+                <!-- Article section on Pugs -->
+                <article id="pugs" class="flex_item">
+                    <figure>
+                        <img src="img/dogs-374906_small.jpg" alt="Pugs">
+                        <figcaption>Pug</figcaption>
+                    </figure>
+                    <h3>Pug</h3>
+                    <p>The Pug is often described as a lot of dog in a small space. These sturdy, compact dogs are a part of the American Kennel Club’s Toy group, and are known as the clowns of the canine world because they have <span>a great sense of humor and like to show off.</span></p>
+                    <p>Originally bred to be lap dogs, Pugs <span>thrive on human companionship.</span> They’re highly sensitive, and though they can make for great apartment pets, they will not appreciate being left home alone for long hours of the day. Although these pups have a stubborn side, especially when it comes to house training, they’re playful, affectionate dogs who will get along well even with novice pet parents. If you’re looking for a loving, easygoing pal, this may be the breed for you!</p>
+                </article>
+                <article id="Shiba" class="flex_item">
+                    <figure>
+                        <img src="img/shiba.jpg" alt="Shiba">
+                        <figcaption>Shiba Inu</figcaption>
+                    </figure>
+                    <h3>Shiba Inu</h3>
+                    <p>The Shiba Inu is small (about 20 pounds) and athletic. Like a ninja warrior, the Shiba Inu moves quickly, nimbly, effortlessly.The Shiba Inu dog breed was originally bred to flush birds and small game, and was occasionally used to hunt wild boar. They’re one of Japan’s six native breeds: <span>Akita</span> (large), <span>Kishu, Hokkaido, Kai, Shikoku </span>(medium), and <span>Shiba</span> (small).</p>
+                    <p>The Shiba Inu is known for a <span>bold, fiery personality. </span>The Japanese have three words to describe the breed's mental traits: kaani-i (spirited boldness), ryosei (good nature), and soboku (alertness). Combined, these traits make up the interesting, intelligent, and strong-willed temperament of this breed.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Using HTML5 Semantic <footer> group content on the bottom of the webpage-->
+        <footer id="footer" class="grid-footer">
+            <h3>Contact Us If You Have Any Quesiton</h3>
+            <div class="icon">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p><a href="mailto:author@example.com">Contact the Author</a> By Email</p>
+            <p><span>Business Number:</span> 1(800)123-4332</p>
+            <p><span>Company Address:</span>
+            <Address>111 Hollywood Blvd, L.A., CA, United States</Address>
+            </p>
+
+            <p>Posted by: <cite>Addie Xiong</cite>
+                | copyright &copy; 2020</p>
+        </footer>
+    </div>
+</body>
+
+</html>
