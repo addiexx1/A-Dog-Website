@@ -12,5 +12,5 @@ main.css,
 img folder,
 and video folder
 
-# Media Credit to https://www.pexels.com/
+# Photo Credits to https://www.pexels.com/
 
